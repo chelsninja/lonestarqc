@@ -1,0 +1,25 @@
+# common ones
+.project/*
+*.zip
+*.log
+*.7z
+*.gzip
+*.exe
+*.orig
+*.tar
+*.rar
+*.jar
+.Trashes
+.DS_STORE
+*.txt
+
+# npm
+bower_components/*
+node_modules/*
+
+# webstorm
+.idea/*
+projectFilesBackup/*
+
+# dev
+prod/*
