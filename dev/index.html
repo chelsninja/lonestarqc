@@ -14,7 +14,18 @@
 		<link rel="stylesheet" href="app.css">
 	</head>
 	<body>
-		<header></header>
+		<header class="header container-fluid">
+			<img src="images/logo.png" class="pull-left"/>
+			<h1 class="pull-left">Lone Star Quidditch Club</h1>
+			<nav class="pull-right">
+				<ul class="nav navbar-nav">
+					<li><a ui-sref="home">Home</a></li>
+					<li><a ui-sref="about">About</a></li>
+					<li><a ui-sref="calendar">Calendar</a></li>
+					<li><a ui-sref="contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
 		<section ui-view></section>
 		<footer></footer>
 		<script src="vendor/vendor.js"></script>

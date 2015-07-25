@@ -1,3 +1,66 @@
+@import url(http://fonts.googleapis.com/css?family=Slabo+27px|Open+Sans:300,600,400);
+
 body {
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
 	height: 100%;
+}
+
+.container-fluid {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.header {
+	position: absolute;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 140px;
+	width: 100%;
+	top: 0;
+
+	img {
+		height: 100%;
+	}
+	h1 {
+		display: inline-block;
+		line-height: 100px;
+		color: white;
+		margin: 0 0 0 20px;
+		font-family: 'Slabo 27px', serif;
+	}
+	li {
+		text-transform: uppercase;
+		padding: 38px 10px;
+		font-size: 18px;
+
+		&:last-child {
+			padding-right: 0;
+		}
+		a {
+			transition: transform 0.25s;
+			color: white;
+			padding: 0;
+			line-height: normal;
+			cursor: pointer;
+
+			&:hover {
+				transform: rotate(-10deg);
+				background-color: transparent;
+			}
+		}
+	}
+}
+
+.cover-photo {
+	background-image: url("images/huddle.jpg");
+	background-size: cover;
+	height: 100vh;
+
+	&:after {
+		background-color: rgba(0, 0, 0, 0.5);
+		display: block;
+		height: 100%;
+		content: "";
+	}
 }
