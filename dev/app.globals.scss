@@ -1,0 +1,27 @@
+.no-margin {
+	margin: 0;
+}
+.no-padding {
+	padding: 0;
+}
+.cover-photo-full {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+
+	&:after {
+		background-color: rgba(0, 0, 0, 0.5);
+		display: block;
+		height: 100%;
+		content: "";
+	}
+}
+.cover-photo-half {
+	@extend .cover-photo-full;
+	background-position: center -150px;
+	height: 50vh;
+}
+.jumbotron {
+	padding: 10px 0 15px;
+}

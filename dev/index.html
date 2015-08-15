@@ -2,7 +2,7 @@
 <!--[if lt IE 7]><html lang="en" ng-app="app" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]><html lang="en" ng-app="app" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]><html lang="en" ng-app="app" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="app" class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" ng-app="app" class="no-js"> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,24 +10,29 @@
 		<title>Lone Star Quidditch Club</title>
 		<meta name="description" content="">
 		<link rel="shortcut icon" href="images/favicon.ico"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="vendor/vendor.css">
 		<link rel="stylesheet" href="app.css">
 	</head>
-	<body>
-		<header class="header container-fluid">
-			<img src="images/logo.png" class="pull-left"/>
-			<h1 class="pull-left">Lone Star Quidditch Club</h1>
-			<nav class="pull-right">
-				<ul class="nav navbar-nav">
+	<body ng-controller="appCtrl">
+		<header class="header" ng-class="{'header-small': notHome}">
+			<nav class="container">
+				<img src="images/logo.png" class="pull-left"/>
+				<h1 class="pull-left">Lone Star Quidditch Club</h1>
+				<ul class="nav navbar-nav navbar-right">
 					<li><a ui-sref="home">Home</a></li>
 					<li><a ui-sref="about">About</a></li>
-					<li><a ui-sref="calendar">Calendar</a></li>
-					<li><a ui-sref="contact">Contact</a></li>
+					<!--<li><a ui-sref="calendar">Calendar</a></li>-->
+					<li><a href="mailto:lonestarquidditch@gmail.com">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
-		<section ui-view></section>
-		<footer></footer>
+		<section ui-view class="{{stateClass}}"></section>
+		<footer class="footer">
+			<article class="container">
+				<p class="no-margin small">Copyright © 2015 Lone Star Quidditch Club</p>
+			</article>
+		</footer>
 		<script src="vendor/vendor.js"></script>
 		<script src="templates.js"></script>
 		<script src="app.js"></script>

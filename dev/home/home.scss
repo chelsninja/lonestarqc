@@ -1,0 +1,29 @@
+@import "../app.variables";
+
+.home {
+	.cover-photo-full {
+		background-image: url("images/lsqc-huddle-1.jpg");
+		position: relative;
+
+		article	{
+			position: absolute;
+			color: white;
+			left: 45%;
+			bottom: 30px;
+			opacity: 0.5;
+
+			span {
+				display: block;
+			}
+		}
+	}
+	.promo-video {
+		padding: 0 0 30px;
+
+		h3 {
+			border-bottom: 1px solid $black;
+			margin: 0 0 20px;
+			color: $blue;
+		}
+	}
+}

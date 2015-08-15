@@ -1,66 +1,71 @@
 @import url(http://fonts.googleapis.com/css?family=Slabo+27px|Open+Sans:300,600,400);
+@import "app.variables";
 
 body {
 	font-family: 'Open Sans', sans-serif;
 	position: relative;
-	height: 100%;
-}
-
-.container-fluid {
-	padding-right: 20px;
-	padding-left: 20px;
 }
 
 .header {
 	position: absolute;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	height: 140px;
+	padding: 20px 0;
 	width: 100%;
 	top: 0;
+	z-index: 999;
 
+	&.header-small {
+		nav {
+			height: 80px;
+		}
+		h1, li a {
+			line-height: 80px;
+		}
+	}
+	nav {
+		transition: height 0.25s;
+		height: 100px;
+	}
 	img {
 		height: 100%;
 	}
 	h1 {
+		transition: line-height 0.25s;
+		font-family: 'Slabo 27px', serif;
 		display: inline-block;
+		margin: 0 0 0 20px;
 		line-height: 100px;
 		color: white;
-		margin: 0 0 0 20px;
-		font-family: 'Slabo 27px', serif;
 	}
 	li {
 		text-transform: uppercase;
-		padding: 38px 10px;
+		padding: 0 10px;
 		font-size: 18px;
 
 		&:last-child {
-			padding-right: 0;
+			padding-right: 20px;
 		}
 		a {
-			transition: transform 0.25s;
+			transition: transform 0.25s, line-height 0.25s;
+			line-height: 100px;
 			color: white;
 			padding: 0;
-			line-height: normal;
 			cursor: pointer;
 
 			&:hover {
 				transform: rotate(-10deg);
 				background-color: transparent;
 			}
+			&:focus {
+				background-color: transparent;
+				outline: none;
+			}
 		}
 	}
 }
 
-.cover-photo {
-	background-image: url("images/huddle.jpg");
-	background-size: cover;
-	height: 100vh;
-
-	&:after {
-		background-color: rgba(0, 0, 0, 0.5);
-		display: block;
-		height: 100%;
-		content: "";
-	}
+.footer {
+	background-color: $black;
+	border-top: 2px solid white;
+	color: white;
+	padding: 20px 0;
 }
