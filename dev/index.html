@@ -19,7 +19,14 @@
 			<nav class="container">
 				<img src="images/logo.png" class="pull-left"/>
 				<h1 class="pull-left">Lone Star Quidditch Club</h1>
-				<ul class="nav navbar-nav navbar-right">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#primary-nav" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<ul id="primary-nav" class="nav navbar-nav navbar-right collapse navbar-collapse">
 					<li><a ui-sref="home">Home</a></li>
 					<li><a ui-sref="about">About</a></li>
 					<!--<li><a ui-sref="calendar">Calendar</a></li>-->

@@ -53,6 +53,7 @@ var vendorCss = [
 		bower + '/angular/angular.min.js',
 		bower + '/ui-router/release/angular-ui-router.min.js',
 		bower + '/angular-animate/angular-animate.min.js',
+		bower + '/bootstrap/dist/js/bootstrap.min.js',
 		bower + '/angular-bootstrap/ui-bootstrap.min.js',
 		bower + '/angular-bootstrap/ui-bootstrap-tpls.min.js'
 	],

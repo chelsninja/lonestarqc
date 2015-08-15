@@ -1,3 +1,5 @@
+@import "app.variables";
+
 .no-margin {
 	margin: 0;
 }
@@ -8,6 +10,7 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	position: relative;
 	height: 100vh;
 
 	&:after {
@@ -16,11 +19,35 @@
 		height: 100%;
 		content: "";
 	}
+	.photo-cred {
+		position: absolute;
+		font-size: 8px;
+		color: white;
+		right: 10px;
+		bottom: 10px;
+		opacity: 0.5;
+		margin: 0;
+	}
 }
 .cover-photo-half {
 	@extend .cover-photo-full;
 	background-position: center -150px;
 	height: 50vh;
+
+	.photo-cred {
+		position: absolute;
+		font-size: 8px;
+		color: white;
+		right: 10px;
+		bottom: 10px;
+		opacity: 0.5;
+		margin: 0;
+	}
+}
+@media screen and (max-width: $break-sm) {
+	.cover-photo-half {
+		background-position: center center;
+	}
 }
 .jumbotron {
 	padding: 10px 0 15px;

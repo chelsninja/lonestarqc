@@ -24,6 +24,20 @@ body {
 	nav {
 		transition: height 0.25s;
 		height: 100px;
+
+		.navbar-toggle {
+			transition: transform 0.25s;
+			padding: 13px 0;
+			border: none;
+			margin: 0;
+
+			&:hover {
+				transform: rotate(-10deg);
+			}
+			span {
+				background-color: white;
+			}
+		}
 	}
 	img {
 		height: 100%;
@@ -68,4 +82,58 @@ body {
 	border-top: 2px solid white;
 	color: white;
 	padding: 20px 0;
+}
+
+@media screen and (max-width: $break-md) {
+	.header, .header.header-small {
+		nav {
+			height: 50px;
+		}
+		h1 {
+			line-height: 50px;
+			margin-left: 10px;
+			font-size: 26px;
+		}
+		li a {
+			line-height: 50px;
+			font-size: 16px;
+		}
+	}
+}
+@media screen and (max-width: $break-sm) {
+	.header, .header.header-small {
+		nav {
+			height: 40px;
+		}
+		h1 {
+			line-height: 40px;
+			font-size: 24px;
+		}
+		ul.nav {
+			background-color: rgba($black, 0.75);
+			width: 100%;
+			position: absolute;
+			margin-top: 0;
+			margin-bottom: 0;
+			top: 0;
+			border: none;
+			border-bottom: 1px solid black;
+			z-index: -1;
+			padding-top: 70px;
+			padding-left: 50px;
+
+			li:first-child {
+				border-top: 1px solid white;
+			}
+		}
+		li a {
+			line-height: 40px;
+			font-size: 14px;
+
+			&:hover {
+				transform: none;
+				color: #ccc;
+			}
+		}
+	}
 }
