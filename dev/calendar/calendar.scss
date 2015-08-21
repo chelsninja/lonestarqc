@@ -1,5 +1,25 @@
+@import "../app.tools";
+
 .calendar {
+	padding-bottom: 40px;
+
 	.cover-photo-half {
 		background-image: url("images/lsqc-simon-1.jpg");
+	}
+	.ui-calendar {
+		.fc-toolbar {
+			h2 {
+				font-size: 24px;
+			}
+		}
+		.practice {
+			@include calendar-event($red);
+		}
+		.tournament {
+			@include calendar-event($blue);
+		}
+		.tryouts {
+			@include calendar-event($black);
+		}
 	}
 }

@@ -1,4 +1,6 @@
 angular.module('app', [
     'ui.router',
-    'app.templates'
+    'app.templates',
+    'ui.bootstrap',
+    'ui.calendar'
 ]);

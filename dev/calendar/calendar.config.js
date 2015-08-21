@@ -5,6 +5,7 @@ angular.module('app')
 
             $stateProvider.state('calendar', {
                 url: '/calendar',
-                templateUrl: 'calendar/calendar.html'
+                templateUrl: 'calendar/calendar.html',
+                controller: 'calendarCtrl'
             });
         }]);

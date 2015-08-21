@@ -10,14 +10,13 @@
 		<title>Lone Star Quidditch Club</title>
 		<meta name="description" content="">
 		<link rel="shortcut icon" href="images/favicon.ico"/>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="vendor/vendor.css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">		<link rel="stylesheet" href="vendor/vendor.css">
 		<link rel="stylesheet" href="app.css">
 	</head>
 	<body ng-controller="appCtrl">
 		<header class="header" ng-class="{'header-small': notHome}">
 			<nav class="container">
-				<img src="images/logo.png" class="pull-left"/>
+				<img src="images/lsqc-logo.png" class="pull-left"/>
 				<h1 class="pull-left">Lone Star Quidditch Club</h1>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
 						data-target="#primary-nav" aria-expanded="false">
@@ -29,7 +28,7 @@
 				<ul id="primary-nav" class="nav navbar-nav navbar-right collapse navbar-collapse">
 					<li><a ui-sref="home">Home</a></li>
 					<li><a ui-sref="about">About</a></li>
-					<!--<li><a ui-sref="calendar">Calendar</a></li>-->
+					<li><a ui-sref="calendar">Calendar</a></li>
 					<li><a href="mailto:lonestarquidditch@gmail.com">Contact</a></li>
 				</ul>
 			</nav>

@@ -1,4 +1,4 @@
-@import "app.variables";
+@import "app.tools";
 
 .no-margin {
 	margin: 0;
@@ -51,4 +51,12 @@
 }
 .jumbotron {
 	padding: 10px 0 15px;
+	background-image: url("images/lsqc-logo-watermark.png");
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 30%;
+}
+.page-header {
+	border-color: $black;
+	color: $blue;
 }

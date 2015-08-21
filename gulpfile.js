@@ -46,18 +46,21 @@ var htmlFiles = [
 
 var vendorCss = [
 		bower + '/bootstrap/dist/css/bootstrap.min.css',
-		bower + '/fontawesome/css/font-awesome.min.css'
+		bower + '/fullcalendar/dist/fullcalendar.min.css'
 	],
 	vendorJs = [
 		bower + '/jquery/dist/jquery.min.js',
+		bower + '/moment/min/moment.min.js',
 		bower + '/angular/angular.min.js',
 		bower + '/ui-router/release/angular-ui-router.min.js',
-		bower + '/angular-animate/angular-animate.min.js',
 		bower + '/bootstrap/dist/js/bootstrap.min.js',
 		bower + '/angular-bootstrap/ui-bootstrap.min.js',
-		bower + '/angular-bootstrap/ui-bootstrap-tpls.min.js'
+		bower + '/angular-bootstrap/ui-bootstrap-tpls.min.js',
+		bower + '/fullcalendar/dist/fullcalendar.min.js',
+		bower + '/fullcalendar/dist/gcal.js',
+		bower + '/angular-ui-calendar/src/calendar.js'
 	],
-	vendorFonts = bower + '/fontawesome/fonts/*';
+	vendorFonts = [];
 
 /*
  Tasks
