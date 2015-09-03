@@ -12,14 +12,18 @@
 				font-size: 24px;
 			}
 		}
-		.practice {
-			@include calendar-event($red);
-		}
-		.tournament {
-			@include calendar-event($blue);
-		}
-		.tryouts {
-			@include calendar-event($black);
+		.fc-event {
+			cursor: pointer;
+
+			&.practice {
+				@include calendar-event($red);
+			}
+			&.tournament {
+				@include calendar-event($blue);
+			}
+			&.tryouts {
+				@include calendar-event($black);
+			}
 		}
 	}
 }
