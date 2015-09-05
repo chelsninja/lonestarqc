@@ -82,6 +82,15 @@ body {
 	border-top: 2px solid white;
 	color: white;
 	padding: 20px 0;
+
+	img {
+		display: inline-block;
+		margin-left: 10px;
+		width: 100px;
+	}
+	.copyright {
+		line-height: 35px;
+	}
 }
 
 @media screen and (max-width: $break-md) {
@@ -135,5 +144,8 @@ body {
 				color: #ccc;
 			}
 		}
+	}
+	.footer p {
+		text-align: center;
 	}
 }

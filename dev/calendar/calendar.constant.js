@@ -74,8 +74,8 @@ angular.module('app')
                 end: '2015-11-16',
                 className: 'tournament',
                 allDay: true,
-                location: 'TBA',
-                locationUrl: '#'
+                location: 'San Marcos, Texas 78666',
+                locationUrl: 'https://www.facebook.com/events/898284100233552/956857414376220/'
             }
         ]
     });
