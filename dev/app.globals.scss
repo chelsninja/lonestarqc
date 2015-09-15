@@ -1,5 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Slabo+27px|Open+Sans:300,600,400);
 @import "app.tools";
 
+body {
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+}
 .no-margin {
 	margin: 0;
 }
@@ -42,11 +47,6 @@
 		bottom: 10px;
 		opacity: 0.5;
 		margin: 0;
-	}
-}
-@media screen and (max-width: $break-sm) {
-	.cover-photo-half {
-		background-position: center center;
 	}
 }
 .jumbotron {

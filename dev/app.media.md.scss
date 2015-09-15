@@ -1,0 +1,34 @@
+@import "app.tools";
+@media screen and (max-width: $break-md) {
+
+	/**
+	 * Header
+	 */
+	.header, .header.header-small {
+		nav {
+			height: 50px;
+		}
+		h1 {
+			line-height: 50px;
+			margin-left: 10px;
+			font-size: 26px;
+		}
+		li a {
+			line-height: 50px;
+			font-size: 16px;
+		}
+	}
+
+	/**
+	 * About
+	 */
+	.about .jumbotron {
+		h2 {
+			font-size: 24px;
+		}
+		p {
+			font-size: 18px;
+		}
+	}
+
+}

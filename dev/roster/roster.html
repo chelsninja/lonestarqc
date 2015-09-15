@@ -1,0 +1,29 @@
+<div class="cover-photo-half">
+    <p class="photo-cred">Photo credit to Nikki Smith</p>
+</div>
+<header class="jumbotron">
+    <div class="container">
+        <h2>Team Roster</h2>
+        <!--<p>Insert a little team summary of who makes up the team and the culture behind it.</p>-->
+    </div>
+</header>
+<article class="container">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Position</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="player in players | orderBy: 'jersey' track by player.jersey">
+            <th>{{player.jersey}}</th>
+            <td>{{player.firstName}}</td>
+            <td>{{player.lastName}}</td>
+            <td>{{player.position}}</td>
+        </tr>
+        </tbody>
+    </table>
+</article>

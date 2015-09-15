@@ -1,0 +1,88 @@
+@import "app.tools";
+@media screen and (max-width: $break-sm) {
+
+	/**
+	 * Globals
+	 */
+	.cover-photo-half {
+		background-position: center center;
+	}
+
+	/**
+	 * Header
+	 */
+	.header, .header.header-small {
+		nav {
+			height: 40px;
+		}
+		h1 {
+			line-height: 40px;
+			font-size: 24px;
+		}
+		ul.nav {
+			background-color: rgba($black, 0.75);
+			width: 100%;
+			position: absolute;
+			margin-top: 0;
+			margin-bottom: 0;
+			top: 0;
+			border: none;
+			border-bottom: 1px solid black;
+			z-index: -1;
+			padding-top: 70px;
+			padding-left: 50px;
+
+			li:first-child {
+				border-top: 1px solid white;
+			}
+		}
+		li a {
+			line-height: 40px;
+			font-size: 14px;
+
+			&:hover {
+				transform: none;
+				color: #ccc;
+			}
+		}
+	}
+
+	/**
+	 * Footer
+	 */
+	.footer {
+		p {
+			text-align: center;
+
+			&.copyright {
+				margin-top: 40px;
+			}
+		}
+	}
+
+	/**
+	 * About
+	 */
+	.about {
+		.jumbotron {
+			h2 {
+				font-size: 20px;
+			}
+			p {
+				font-size: 16px;
+			}
+		}
+		.stats {
+			h3 {
+				font-size: 20px;
+			}
+			h4 {
+				font-size: 16px;
+			}
+			ul li {
+				font-size: 12px;
+			}
+		}
+	}
+
+}
