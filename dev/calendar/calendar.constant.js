@@ -43,7 +43,6 @@ angular.module('app')
                 id: 'tourny1',
                 title: 'Fifth Annual Breakfast Taco Tournament',
                 start: '2015-09-19',
-                end: '2015-09-21',
                 className: 'tournament',
                 allDay: true,
                 location: 'Huntsville, Texas 77340',
