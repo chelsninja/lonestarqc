@@ -7,6 +7,14 @@
 	.cover-photo-half {
 		background-position: center center;
 	}
+	.jumbotron {
+		h2 {
+			font-size: 20px;
+		}
+		p {
+			font-size: 16px;
+		}
+	}
 
 	/**
 	 * Header
@@ -14,10 +22,14 @@
 	.header, .header.header-small {
 		nav {
 			height: 40px;
+
+			.navbar-toggle {
+				padding: 11px 0;
+			}
 		}
 		h1 {
 			line-height: 40px;
-			font-size: 24px;
+			font-size: 20px;
 		}
 		ul.nav {
 			background-color: rgba($black, 0.75);
@@ -29,20 +41,28 @@
 			border: none;
 			border-bottom: 1px solid black;
 			z-index: -1;
-			padding-top: 70px;
+			padding-top: 60px;
 			padding-left: 50px;
 
 			li:first-child {
 				border-top: 1px solid white;
 			}
 		}
-		li a {
-			line-height: 40px;
-			font-size: 14px;
+		li {
+			&:first-child {
+				padding-top: 10px;
+			}
+			&:last-child {
+				padding-bottom: 5px;
+			}
+			a {
+				line-height: 30px;
+				font-size: 14px;
 
-			&:hover {
-				transform: none;
-				color: #ccc;
+				&:hover {
+					transform: none;
+					color: #ccc;
+				}
 			}
 		}
 	}
@@ -61,17 +81,18 @@
 	}
 
 	/**
+	 * Home
+	 */
+	.home .promo-video {
+		h3 {
+			font-size: 20px;
+		}
+	}
+
+	/**
 	 * About
 	 */
 	.about {
-		.jumbotron {
-			h2 {
-				font-size: 20px;
-			}
-			p {
-				font-size: 16px;
-			}
-		}
 		.stats {
 			h3 {
 				font-size: 20px;

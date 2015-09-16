@@ -14,36 +14,6 @@
 			span {
 				display: block;
 			}
-			@media screen and (max-width: $break-md) {
-				bottom: 20px;
-
-				span {
-					font-size: 12px;
-				}
-				.fa {
-					font-size: 2em;
-				}
-			}
-		}
-	}
-	@media screen and (max-width: $break-md) {
-		.jumbotron {
-			h2 {
-				font-size: 24px;
-			}
-			p {
-				font-size: 18px;
-			}
-		}
-	}
-	@media screen and (max-width: $break-sm) {
-		.jumbotron {
-			h2 {
-				font-size: 20px;
-			}
-			p {
-				font-size: 16px;
-			}
 		}
 	}
 	.promo-video {
@@ -53,12 +23,6 @@
 			border-bottom: 1px solid $black;
 			margin: 0 0 20px;
 			color: $blue;
-		}
-		@media screen and (max-width: $break-sm) {
-			h3 {
-				font-size: 20px;
-			}
-
 		}
 	}
 }

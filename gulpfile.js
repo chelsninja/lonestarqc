@@ -36,7 +36,11 @@ var htmlFiles = [
 		dev + '/**/*.html',
 		'!' + dev + '/index.html'
 	],
-	sassFiles = dev + '/**/*.scss',
+	sassFiles = [
+		dev + '/app.globals.scss',
+		dev + '/app.scss',
+		dev + '/**/*.scss'
+	],
 	jsFiles = [
 		dev + '/**/*.module.js',
 		dev + '/**/*.js'

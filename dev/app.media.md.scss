@@ -2,6 +2,18 @@
 @media screen and (max-width: $break-md) {
 
 	/**
+	* Globals
+	*/
+	.jumbotron {
+		h2 {
+			font-size: 24px;
+		}
+		p {
+			font-size: 18px;
+		}
+	}
+
+	/**
 	 * Header
 	 */
 	.header, .header.header-small {
@@ -20,14 +32,16 @@
 	}
 
 	/**
-	 * About
+	 * Home
 	 */
-	.about .jumbotron {
-		h2 {
-			font-size: 24px;
+	.home .cover-photo-full article {
+		bottom: 20px;
+
+		span {
+			font-size: 12px;
 		}
-		p {
-			font-size: 18px;
+		.fa {
+			font-size: 2em;
 		}
 	}
 

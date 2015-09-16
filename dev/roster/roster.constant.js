@@ -6,7 +6,9 @@ angular.module('app')
                 lastName: 'Lorenz',
                 headShot: 'lorenz.jpg',
                 jersey: 25,
-                position: 'Chaser'
+                position: 'Chaser',
+                hometown: 'New York, NY',
+                yearsOfExp: 1
             },
             {
                 firstName: 'Becca',

@@ -9,15 +9,15 @@
 
 	&.header-small {
 		nav {
-			height: 80px;
+			height: 60px;
 		}
 		h1, li a {
-			line-height: 80px;
+			line-height: 60px;
 		}
 	}
 	nav {
 		transition: height 0.25s;
-		height: 100px;
+		height: 80px;
 
 		.navbar-toggle {
 			transition: transform 0.25s;
@@ -41,7 +41,7 @@
 		font-family: 'Slabo 27px', serif;
 		display: inline-block;
 		margin: 0 0 0 20px;
-		line-height: 100px;
+		line-height: 80px;
 		color: white;
 	}
 	li {
@@ -54,7 +54,7 @@
 		}
 		a {
 			transition: transform 0.25s, line-height 0.25s;
-			line-height: 100px;
+			line-height: 80px;
 			color: white;
 			padding: 0;
 			cursor: pointer;
