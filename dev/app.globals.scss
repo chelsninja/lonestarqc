@@ -55,10 +55,12 @@ body {
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	background-size: 30%;
-
-
+	margin: 0;
 }
 .page-header {
 	border-color: $black;
 	color: $blue;
+}
+.page-article {
+	padding: 30px 0;
 }

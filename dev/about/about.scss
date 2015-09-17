@@ -4,9 +4,7 @@
 	.cover-photo-half {
 		background-image: url("images/lsqc-huddle-2.jpg");
 	}
-	.stats {
-		padding-bottom: 20px;
-
+	article {
 		h3 {
 			border-bottom: 1px solid $black;
 			margin: 0 0 20px;
@@ -14,6 +12,9 @@
 		}
 		h4 {
 			margin-top: 0;
+		}
+		ul:last-child {
+			margin-bottom: 0;
 		}
 	}
 }
