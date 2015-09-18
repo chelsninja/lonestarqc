@@ -4,8 +4,13 @@
 	/**
 	 * Globals
 	 */
+	.cover-photo-full,
 	.cover-photo-half {
-		background-position: center center;
+		background-position: center;
+
+		&:after {
+			background-color: rgba(0, 0, 0, 0.4);
+		}
 	}
 	.jumbotron {
 		h2 {
@@ -71,12 +76,27 @@
 	 * Footer
 	 */
 	.footer {
-		p {
-			text-align: center;
+		text-align: center;
 
-			&.copyright {
-				margin-top: 40px;
+		.sponsors {
+			width: calc(100% + 15px);
+
+			a {
+				width: 50%;
+				display: block;
+				margin: 10px auto;
 			}
+		}
+		.social-links {
+			text-align: center;
+			margin: 10px 0;
+
+			a {
+				font-size: 2em;
+			}
+		}
+		.copyright {
+			text-align: center;
 		}
 	}
 

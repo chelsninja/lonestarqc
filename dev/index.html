@@ -26,7 +26,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<ul id="primary-nav" class="nav navbar-nav navbar-right collapse navbar-collapse">
+				<ul id="primary-nav" class="nav navbar-nav navbar-right collapse navbar-collapse text-uppercase">
 					<li><a ui-sref="home">Home</a></li>
 					<li><a ui-sref="about">About</a></li>
 					<li><a ui-sref="roster">Roster</a></li>
@@ -37,16 +37,29 @@
 		</header>
 		<section ui-view class="{{stateClass}}"></section>
 		<footer class="footer">
-			<aside class="container">
+			<div class="container">
 				<div class="row">
-					<p class="no-margin small col-sm-6">Sponsored by <a href="http://sisuguard.com/" target="_blank"><img
-							src="images/lsqc-sponsor-sisu.png" alt="Sisuguard" class="img-responsive"/></a> <a href="http://www.txortho.com/" target="_blank"><img
-							src="images/lsqc-sponsor-texas-ortho.png" alt="Texas Orthopedics"
-							class="img-responsive"/></a></p>
-					<p class="copyright no-margin small text-right col-sm-6">Copyright © 2015 Lone Star Quidditch
-						Club</p>
+					<div class="sponsors row col-sm-6">
+						<h5 class="col-sm-12 text-uppercase">Sponsored by</h5>
+						<a href="http://sisuguard.com/" target="_blank" class="col-sm-4">
+							<img src="images/lsqc-sponsor-sisu.png" alt="Sisuguard" class="img-responsive"/></a>
+						<a href="http://www.txortho.com/" target="_blank" class="col-sm-4">
+							<img src="images/lsqc-sponsor-texas-ortho.png" alt="Texas Orthopedics" class="img-responsive"/></a>
+					</div>
+					<div class="col-sm-6">
+						<ul class="social-links list-inline text-right">
+							<li><a href="https://www.facebook.com/LoneStarQC" target="_blank"
+								   class="fa fa-3x fa-facebook-square"></a></li>
+							<li><a href="https://twitter.com/LoneStarQC" target="_blank"
+								   class="fa fa-3x fa-twitter-square"></a></li>
+							<li><a href="https://instagram.com/lonestarqc/" target="_blank"
+								   class="fa fa-3x fa-instagram"></a></li>
+						</ul>
+						<p class="copyright no-margin small text-right">Copyright © 2015 Lone Star Quidditch
+							Club</p>
+					</div>
 				</div>
-			</aside>
+			</div>
 		</footer>
 		<script src="vendor/vendor.js"></script>
 		<script src="templates.js"></script>
