@@ -43,8 +43,8 @@ angular.module('app')
                 headShot: 'scholz.jpg',
                 jersey: 7,
                 position: 'Chaser',
-                hometown: '-',
-                experience: '-'
+                hometown: 'Deer Park, TX',
+                experience: 2
             },
             {
                 firstName: 'Joshua',
@@ -106,8 +106,8 @@ angular.module('app')
                 headShot: 'wright.jpg',
                 jersey: 4,
                 position: 'Chaser / Beater',
-                hometown: '-',
-                experience: '-'
+                hometown: 'Bells, TX',
+                experience: 4
             },
             {
                 firstName: 'Sam',
@@ -115,7 +115,7 @@ angular.module('app')
                 headShot: 'haimowitz.jpg',
                 jersey: 6,
                 position: 'Chaser',
-                hometown: '-',
+                hometown: 'Flower Mound, TX',
                 experience: 2
             },
             {
@@ -125,7 +125,7 @@ angular.module('app')
                 jersey: 14,
                 position: 'Chaser',
                 hometown: 'Austin, TX',
-                experience: '-'
+                experience: 6
             },
             {
                 firstName: 'Josh',
@@ -151,8 +151,8 @@ angular.module('app')
                 headShot: 'elarba.jpg',
                 jersey: 18,
                 position: 'Beater',
-                hometown: '-',
-                experience: '-'
+                hometown: 'Smithville, TX',
+                experience: 4
             },
             {
                 firstName: 'Savannah',
