@@ -5,7 +5,6 @@ angular.module('app')
 
             $stateProvider.state('contact', {
                 url: '/contact',
-                templateUrl: 'contact/contact.html',
-                controller: 'contactCtrl'
+                templateUrl: 'contact/contact.html'
             });
         }]);

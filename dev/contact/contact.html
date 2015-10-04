@@ -1,36 +1,40 @@
 <div class="cover-photo-half"></div>
-<article class="container">
-    <h2>Contact Us</h2>
-    <form ng-submit="submit()" class="form-horizontal" role="form" novalidate name="contactForm">
+<header class="jumbotron">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <!--<p>...</p>-->
+    </div>
+</header>
+<article class="page-article container">
+    <form action="http://www.bluehost.com/bluemail" enctype="multipart/form-data" method="POST"
+          class="form-horizontal" role="form" novalidate name="contactForm">
         <div class="form-group">
-            <label for="inputName" class="col-lg-2 control-label">Name</label>
+            <label for="name" class="col-lg-2 control-label">Name</label>
             <div class="col-lg-8">
-                <input ng-model="formData.inputName" type="text" class="form-control"
-                       id="inputName" name="inputName" required>
+                <input type="text" class="form-control" id="name" name="name" required
+                       ng-model="name">
+            </div>
+        </div>
+        <div class="form-group" ng-class="{'has-error':contactForm.mailfrom.$error.email}">
+            <label for="mailfrom" class="col-lg-2 control-label">Email</label>
+            <div class="col-lg-8">
+                <input type="email" class="form-control" id="mailfrom" name="mailfrom" required
+                       ng-model="mailfrom">
             </div>
         </div>
         <div class="form-group">
-            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-            <span ng-show="contactForm.inputEmail.$error.email" class="small text-danger">Invalid</span>
+            <label for="message" class="col-lg-2 control-label">Message</label>
             <div class="col-lg-8">
-                <input ng-model="formData.inputEmail" type="email" class="form-control"
-                       id="inputEmail" name="inputEmail" required>
+                <textarea class="form-control" rows="4" id="message" name="message" required
+                          ng-model="message"></textarea>
             </div>
         </div>
-        <div class="form-group">
-            <label for="inputMessage" class="col-lg-2 control-label">Message</label>
-            <div class="col-lg-8">
-                <textarea ng-model="formData.inputMessage" class="form-control" rows="4"
-                          id="inputMessage" name="inputMessage" required></textarea>
-            </div>
-        </div>
+        <input type="hidden" name="subject" value="Website Contact Form Submission">
+        <input type="hidden" name="sendtoemail" value="info@lonestarqc.com">
         <div class="form-group">
             <div class="col-lg-offset-2 col-lg-10">
-                <button type="submit" class="btn btn-primary" ng-click="sendForm()"
-                        ng-disabled="contactForm.$invalid">
-                    Send Message
-                </button>
-                <button ng-click="resetForm()" class="btn btn-default">Reset</button>
+                <button type="submit" class="btn btn-primary" ng-disabled="contactForm.$invalid">Send Message</button>
+                <button type="reset" class="btn btn-default">Reset</button>
             </div>
         </div>
     </form>
