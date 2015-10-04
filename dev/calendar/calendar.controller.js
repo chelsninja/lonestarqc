@@ -45,6 +45,10 @@ angular.module('app')
                     if (event._recurring && event.start < event.dowStart) {
                         return false;
                     }
+                    // Hide recurring events after end date
+                    if (event._recurring && event.end > event.dowEnd) {
+                        return false;
+                    }
                 },
                 eventClick: function() {
                     // Check to see if event is clicked twice

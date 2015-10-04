@@ -1,7 +1,7 @@
 <div class="cover-photo-half"></div>
 <article class="container">
     <h2>Contact Us</h2>
-    <form ng-submit="submit()" class="form-horizontal" role="form">
+    <form ng-submit="submit()" class="form-horizontal" role="form" novalidate name="contactForm">
         <div class="form-group">
             <label for="inputName" class="col-lg-2 control-label">Name</label>
             <div class="col-lg-8">
@@ -11,6 +11,7 @@
         </div>
         <div class="form-group">
             <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+            <span ng-show="contactForm.inputEmail.$error.email" class="small text-danger">Invalid</span>
             <div class="col-lg-8">
                 <input ng-model="formData.inputEmail" type="email" class="form-control"
                        id="inputEmail" name="inputEmail" required>
@@ -25,9 +26,11 @@
         </div>
         <div class="form-group">
             <div class="col-lg-offset-2 col-lg-10">
-                <button type="submit" class="btn btn-default">
+                <button type="submit" class="btn btn-primary" ng-click="sendForm()"
+                        ng-disabled="contactForm.$invalid">
                     Send Message
                 </button>
+                <button ng-click="resetForm()" class="btn btn-default">Reset</button>
             </div>
         </div>
     </form>

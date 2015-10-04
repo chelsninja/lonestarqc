@@ -2,6 +2,14 @@ angular.module('app')
     .constant('calendar.constant', {
         calEvents: [
             {
+                id: 'tryouts1',
+                title: '2015-2016 Fall Tryouts',
+                start: '2015-08-15 11',
+                className: 'tryouts',
+                location: 'Domain Central Park',
+                locationUrl: 'https://www.facebook.com/events/1630272940545110/'
+            },
+            {
                 id: 'practice1',
                 title: 'Practice',
                 start: "19:00",
@@ -18,18 +26,23 @@ angular.module('app')
                 start: "12:00",
                 end: "15:00",
                 dowStart: new Date(2015, 7, 26),
+                dowEnd: new Date(2015, 8, 23),
                 dow: [0],
                 className: 'practice',
                 location: 'Zilker Park',
                 locationUrl: 'https://goo.gl/maps/2wxVe'
             },
             {
-                id: 'tryouts1',
-                title: '2015-2016 Fall Tryouts',
-                start: '2015-08-15 11',
-                className: 'tryouts',
-                location: 'Domain Central Park',
-                locationUrl: 'https://www.facebook.com/events/1630272940545110/'
+                id: 'practice3',
+                title: 'Practice',
+                start: "12:00",
+                end: "15:00",
+                dowStart: new Date(2015, 8, 23),
+                dowEnd: new Date(2015, 8, 30),
+                dow: [0],
+                className: 'practice',
+                location: 'Ramsey Park',
+                locationUrl: 'https://goo.gl/maps/A2i9MKpfgpN2'
             },
             {
                 id: 'group1',
@@ -49,22 +62,41 @@ angular.module('app')
                 locationUrl: 'https://www.facebook.com/events/848216885264818/'
             },
             {
+                id: 'practice4',
+                title: 'Practice',
+                start: '2015-10-11 12',
+                className: 'practice',
+                location: 'Ramsey Park',
+                locationUrl: 'https://goo.gl/maps/A2i9MKpfgpN2'
+            },
+            {
                 id: 'group2',
                 title: 'Group Practice',
                 start: '2015-10-04 11',
                 className: 'practice',
-                location: 'Zilker Park',
-                locationUrl: 'https://goo.gl/maps/2wxVe'
+                location: 'Ramsey Park',
+                locationUrl: 'https://goo.gl/maps/A2i9MKpfgpN2'
             },
             {
                 id: 'tourny2',
                 title: 'Wolfpack Classic',
                 start: '2015-10-17',
-                end: '2015-10-19',
                 className: 'tournament',
                 allDay: true,
-                location: 'TBA',
-                locationUrl: '#'
+                location: 'New Orleans, LA 70003',
+                locationUrl: 'https://www.facebook.com/events/671048919693115/'
+            },
+            {
+                id: 'practice5',
+                title: 'Practice',
+                start: "12:00",
+                end: "15:00",
+                dowStart: new Date(2015, 9, 20),
+                dowEnd: new Date(2015, 10, 11),
+                dow: [0],
+                className: 'practice',
+                location: 'Zilker Park',
+                locationUrl: 'https://goo.gl/maps/2wxVe'
             },
             {
                 id: 'tourny3',
@@ -75,6 +107,17 @@ angular.module('app')
                 allDay: true,
                 location: 'San Marcos, Texas 78666',
                 locationUrl: 'https://www.facebook.com/events/898284100233552/956857414376220/'
-            }
+            },
+            {
+                id: 'practice6',
+                title: 'Practice',
+                start: "12:00",
+                end: "15:00",
+                dowStart: new Date(2015, 10, 18),
+                dow: [0],
+                className: 'practice',
+                location: 'Zilker Park',
+                locationUrl: 'https://goo.gl/maps/2wxVe'
+            },
         ]
     });
