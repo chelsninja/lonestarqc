@@ -75,8 +75,11 @@
 	padding: 20px 0;
 	color: white;
 
+	h5 {
+		margin-top: 0;
+	}
 	.social-links {
-		margin: 10px 0 20px;
+		margin-bottom: 0;
 
 		a {
 			color: white;
@@ -85,6 +88,15 @@
 			&:hover {
 				color: #ccc;
 			}
+		}
+	}
+	.footer-nav {
+		a {
+			color: white;
+		}
+		.separator {
+			position: relative;
+			top: -1px;
 		}
 	}
 }

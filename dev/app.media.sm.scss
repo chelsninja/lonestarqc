@@ -78,15 +78,6 @@
 	.footer {
 		text-align: center;
 
-		.sponsors {
-			width: calc(100% + 15px);
-
-			a {
-				width: 50%;
-				display: block;
-				margin: 10px auto;
-			}
-		}
 		.social-links {
 			text-align: center;
 			margin: 10px 0;
@@ -94,6 +85,9 @@
 			a {
 				font-size: 2em;
 			}
+		}
+		.footer-nav {
+			text-align: center;
 		}
 		.copyright {
 			text-align: center;
