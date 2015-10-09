@@ -65,3 +65,26 @@ body {
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
+.btn-primary {
+	background-color: $blue;
+	border-color: $blue;
+
+	&:focus {
+		background-color: darken($blue, 10%);
+		border-color: darken($blue, 25%);
+	}
+	&:hover,
+	&:active {
+		background-color: darken($blue, 10%);
+		border-color: darken($blue, 12%);
+	}
+}
+.btn-primary[disabled] {
+	background-color: $blue;
+	border-color: $blue;
+
+	&:hover {
+		background-color: $blue;
+		border-color: $blue;
+	}
+}

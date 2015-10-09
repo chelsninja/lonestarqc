@@ -20,14 +20,14 @@ angular.module('app')
                     // Create popover html
                     if (event.allDay) {
                         $scope.calPopoverHtml[event.id] = $sce.trustAsHtml(
-                            '<ul class="list-unstyled">' +
+                            '<ul class="list-unstyled no-margin">' +
                             '<li><strong>Time:</strong> All Day</li>' +
                             '<li><strong>Location:</strong> <a href="'+event.locationUrl+'" target="_blank">'+event.location+'</a></li>' +
                             '</ul>'
                         );
                     } else {
                         $scope.calPopoverHtml[event.id] = $sce.trustAsHtml(
-                            '<ul class="list-unstyled">' +
+                            '<ul class="list-unstyled no-margin">' +
                             '<li><strong>Time:</strong> '+$filter('date')(event.start._d, 'shortTime', '+0000')+'</li>' +
                             '<li><strong>Location:</strong> <a href="'+event.locationUrl+'" target="_blank">'+event.location+'</a></li>' +
                             '</ul>'
@@ -37,7 +37,8 @@ angular.module('app')
                     // Add popover
                     element.attr({
                         'popover-html': 'calPopoverHtml.'+event.id,
-                        'popover-title': event.title
+                        'popover-title': event.title,
+                        'popover-class': 'cal-popover'
                     });
                     $compile(element)($scope);
 

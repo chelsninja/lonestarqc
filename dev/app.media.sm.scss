@@ -120,4 +120,17 @@
 		}
 	}
 
+	/**
+	 * Calendar
+	 */
+	.calendar {
+		.cal-popover {
+			.popover-title,
+			.popover-content {
+				padding: 5px 10px;
+				font-size: 12px;
+			}
+		}
+	}
+
 }

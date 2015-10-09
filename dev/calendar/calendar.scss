@@ -32,6 +32,9 @@
 			&.tryouts {
 				@include calendar-event($black);
 			}
+			.fc-content {
+				top: 0.5px;
+			}
 		}
 	}
 }
