@@ -2,6 +2,15 @@ angular.module('app')
     .constant('roster.constant', {
         players: [
             {
+                firstName: 'Mollie',
+                lastName: 'Lensing',
+                headShot: 'lensing.jpg',
+                jersey: -1,
+                position: 'Coach',
+                hometown: 'The Woodlands, TX',
+                experience: 6
+            },
+            {
                 firstName: 'Chelsea',
                 lastName: 'Lorenz',
                 headShot: 'lorenz.jpg',

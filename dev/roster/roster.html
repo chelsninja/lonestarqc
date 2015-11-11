@@ -23,7 +23,7 @@
         </thead>
         <tbody>
         <tr ng-repeat="player in players | orderBy: 'jersey' track by player.jersey">
-            <th>{{player.jersey}}</th>
+            <th>{{player.jersey < 0 ? "-" : player.jersey}}</th>
             <td>{{player.firstName}}</td>
             <td>{{player.lastName}}</td>
             <td>{{player.position}}</td>
