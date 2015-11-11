@@ -5,6 +5,9 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	position: relative;
 }
+body a {
+	color: $blue;
+}
 .no-margin {
 	margin: 0;
 }
