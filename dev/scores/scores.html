@@ -1,0 +1,20 @@
+<div class="cover-photo-half">
+    <p class="photo-cred">Photo credit to ...</p>
+</div>
+<header class="jumbotron">
+    <div class="container">
+        <h2>Scores</h2>
+        <p>...</p>
+    </div>
+</header>
+<article class="page-article container">
+    <div ng-repeat="score in scores | orderBy: 'date' track by score.date" class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">{{score.tourny}} <small>— {{score.date}}</small></h3>
+        </div>
+        <ul class="list-group">
+            <li ng-repeat="game in score.games" class="list-group-item">vs. {{game.opp}} — {{game.ourScore}} - {{game.oppScore}}</li>
+        </ul>
+        <div class="panel-footer">Finished: {{score.placed}} Place</div>
+    </div>
+</article>
