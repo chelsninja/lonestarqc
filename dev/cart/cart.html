@@ -1,0 +1,59 @@
+<section class="cart fade col-md-8" ng-class="{'open':cartOpen, 'active':cartItems.length > 0}">
+    <button class="cart-btn btn btn-primary pull-left" type="button" ng-click="cartOpen=!cartOpen">
+        <i class="fa fa-shopping-cart fa-3x"></i>
+        <span class="badge">{{cartItems.length}}</span>
+    </button>
+    <article class="cart-summary pull-right">
+        <h3>Shopping Cart</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                <tr>
+                    <th class="text-center">Remove</th>
+                    <th class="text-center">Product</th>
+                    <th>Name</th>
+                    <th>Size</th>
+                    <th class="text-right">Unit Price</th>
+                    <th class="text-right">Quantity</th>
+                    <th class="text-right">Item Subtotal</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="item in cartItems">
+                    <td class="text-center">
+                        <button class="remove-btn btn btn-link no-padding" ng-click="removeItem(item)">
+                            <i class="fa fa-trash-o"></i>
+                        </button>
+                    </td>
+                    <td class="text-center"><img src="images/swag/test.jpg" alt="{{item.name}}" class="cart-img"></td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.size}}</td>
+                    <td class="text-right">{{item.price | currency}}</td>
+                    <td class="text-right">{{item.qty}}</td>
+                    <td class="text-right">{{item.subtotal | currency}}</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="cart-delivery panel panel-default col-md-5">
+                <div class="form-group no-margin">
+                    <label for="">Delivery options:</label>
+                    <select id="" ng-init="cartDelivery=deliveryOptions[0]" ng-model="cartDelivery"
+                            ng-options="option for option in deliveryOptions" class="form-control"></select>
+                </div>
+            </div>
+            <div class="cart-totals panel panel-default col-md-6 col-md-offset-1">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt>Subtotal</dt>
+                        <dd>{{cartTotals.subtotal | currency}}</dd>
+                        <dt>Estimated Shipping</dt>
+                        <dd>{{cartTotals.estShipping | currency}}</dd>
+                        <dt class="grand-total">Grand Total</dt>
+                        <dd>{{cartTotals.grandTotal | currency}} <small class="text-muted">USD</small></dd>
+                    </dl>
+                    <button class="btn btn-primary pull-right">Check out with PayPal</button>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>

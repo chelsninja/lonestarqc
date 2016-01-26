@@ -4,7 +4,8 @@ angular.module('app')
             "use strict";
 
             $stateProvider.state('contact', {
-                url: '/contact',
-                templateUrl: 'contact/contact.html'
+                url: '/contact/{subject}',
+                templateUrl: 'contact/contact.html',
+                controller: 'contactCtrl'
             });
         }]);

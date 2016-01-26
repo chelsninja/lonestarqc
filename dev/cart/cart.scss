@@ -1,0 +1,74 @@
+@import "../app.tools";
+
+.cart {
+	transition: right $normal-duration ease-in-out, opacity $slow-duration;
+	position: fixed;
+	right: -60.667%;
+	z-index: 1000;
+	opacity: 0;
+	top: 100px;
+
+	&.active {
+		opacity: 1;
+	}
+	&.open {
+		right: -15px;
+	}
+	.cart-btn {
+		border-radius: 4px 0 0 4px;
+		position: relative;
+
+		.badge {
+			background-color: $red;
+			position: absolute;
+			color: white;
+			right: 5px;
+			top: 5px;
+		}
+	}
+	.cart-summary {
+		box-shadow: 0 3px 9px rgba($black, 0.5);
+		width: calc(100% - 65px);
+		background-color: white;
+		padding: 0 20px 20px;
+
+		table {
+			td {
+				vertical-align: middle;
+			}
+			.remove-btn {
+				color: $gray;
+
+				&:hover {
+					color: darken($gray, 15%);
+				}
+			}
+			.cart-img {
+				height: 50px;
+				width: auto;
+			}
+		}
+		.cart-delivery {
+			margin-bottom: 0;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		.cart-totals {
+			margin-bottom: 0;
+
+			.panel-body {
+				padding: 15px 0;
+			}
+			dt:not(.grand-total) {
+				font-weight: normal;
+			}
+			.grand-total + dd {
+				font-weight: 700;
+
+				small {
+					font-weight: normal;
+				}
+			}
+		}
+	}
+}

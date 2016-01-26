@@ -8,34 +8,38 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Lone Star Quidditch Club</title>
-		<meta name="description" content="">
+		<meta name="description" content="Austin's quidditch community team.">
 		<link rel="shortcut icon" href="images/lsqc-favicon.ico" type="image/x-icon">
 		<link rel="icon" href="images/lsqc-favicon.ico" type="image/x-icon">
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">		<link rel="stylesheet" href="vendor/vendor.css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+		<link rel="stylesheet" href="vendor/vendor.css">
 		<link rel="stylesheet" href="app.css">
+		<link rel="stylesheet" href="app.media.css">
 	</head>
 	<body ng-controller="appCtrl">
 		<header class="header" ng-class="{'header-small': notHome}">
 			<nav class="container">
 				<img src="images/lsqc-logo.png" class="pull-left"/>
 				<h1 class="pull-left">Lone Star Quidditch Club</h1>
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-						data-target="#primary-nav" aria-expanded="false">
+				<button type="button" class="navbar-toggle" aria-expanded="false"
+						ng-click="isCollapsed=!isCollapsed">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<ul id="primary-nav" class="nav navbar-nav navbar-right collapse navbar-collapse text-uppercase">
+				<ul class="nav navbar-nav navbar-right navbar-collapse text-uppercase" uib-collapse="isCollapsed">
 					<li><a ui-sref="home">Home</a></li>
 					<li><a ui-sref="about">About</a></li>
 					<li><a ui-sref="roster">Roster</a></li>
 					<li><a ui-sref="calendar">Calendar</a></li>
+					<li><a ui-sref="swag">Swag</a></li>
 					<li><a ui-sref="contact">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
 		<section ui-view class="{{stateClass}}"></section>
+		<!--<ng-include ng-controller="cartCtrl" src="'cart/cart.html'"></ng-include>-->
 		<footer class="footer">
 			<div class="container">
 				<div class="row">

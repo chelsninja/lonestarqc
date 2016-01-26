@@ -27,7 +27,7 @@
 		}
 		li a {
 			line-height: 50px;
-			font-size: 16px;
+			font-size: 14px;
 		}
 	}
 
@@ -45,4 +45,19 @@
 		}
 	}
 
+	/**
+	 * Swag
+	 */
+	.swag .swag-results {
+		.thumbnail {
+			h3 {
+				font-size: 20px;
+			}
+		}
+	}
+	.swag-modal {
+		h3 {
+			font-size: 20px;
+		}
+	}
 }

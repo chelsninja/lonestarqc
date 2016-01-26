@@ -16,11 +16,11 @@
 		}
 	}
 	nav {
-		transition: height 0.25s;
-		height: 80px;
+		transition: height $fast-duration;
+		height: 70px;
 
 		.navbar-toggle {
-			transition: transform 0.25s;
+			transition: transform $fast-duration;
 			padding: 13px 0;
 			border: none;
 			margin: 0;
@@ -32,28 +32,32 @@
 				background-color: white;
 			}
 		}
+		.navbar-nav {
+			margin-right: -15px;
+		}
 	}
 	img {
 		height: 100%;
 	}
 	h1 {
-		transition: line-height 0.25s;
+		transition: line-height $fast-duration;
 		font-family: 'Slabo 27px', serif;
 		display: inline-block;
-		margin: 0 0 0 20px;
-		line-height: 80px;
+		margin: 0 0 0 15px;
+		line-height: 70px;
+		font-size: 34px;
 		color: white;
 	}
 	li {
-		padding: 0 10px;
+		padding: 0 8px;
 		font-size: 18px;
 
 		&:last-child {
 			padding-right: 0;
 		}
 		a {
-			transition: transform 0.25s, line-height 0.25s;
-			line-height: 80px;
+			transition: transform $fast-duration, line-height $fast-duration;
+			line-height: 70px;
 			color: white;
 			padding: 0;
 			cursor: pointer;

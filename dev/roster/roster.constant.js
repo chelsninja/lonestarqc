@@ -5,10 +5,19 @@ angular.module('app')
                 firstName: 'Mollie',
                 lastName: 'Lensing',
                 headShot: 'lensing.jpg',
-                jersey: -1,
+                jersey: -2,
                 position: 'Coach',
                 hometown: 'The Woodlands, TX',
                 experience: 6
+            },
+            {
+                firstName: 'Aryan',
+                lastName: 'Ghoddossy',
+                headShot: 'ghoddossy.jpg',
+                jersey: -1,
+                position: 'Coach',
+                hometown: 'Sugar Land, TX',
+                experience: 3
             },
             {
                 firstName: 'Chelsea',
@@ -56,13 +65,13 @@ angular.module('app')
                 experience: 2
             },
             {
-                firstName: 'Joshua',
-                lastName: 'Tates',
-                headShot: 'tates.jpg',
-                jersey: 23,
+                firstName: 'Ryan',
+                lastName: 'Bell',
+                headShot: 'bell.jpg',
+                jersey: 99,
                 position: 'Seeker / Chaser',
-                hometown: 'Garland, TX',
-                experience: 1
+                hometown: 'Dallas, TX',
+                experience: 0
             },
             {
                 firstName: 'Simon',
@@ -219,14 +228,13 @@ angular.module('app')
                 experience: 3.5
             },
             {
-                firstName: 'Lyz',
-                nickname: 'Lyzard',
-                lastName: 'Reblin',
-                headShot: 'reblin.jpg',
-                jersey: 99,
-                position: 'Chaser',
-                hometown: 'Sugar Land, TX',
-                experience: 3
+                firstName: 'Eric',
+                lastName: 'Willroth',
+                headShot: 'willroth.jpg',
+                jersey: 12,
+                position: 'Beater',
+                hometown: 'The Woodlands, TX',
+                experience: 7
             },
             {
                 firstName: 'Colton',

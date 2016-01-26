@@ -4,6 +4,7 @@
 $red: #f91c14;
 $blue: #0f1681;
 $black: #111;
+$gray: #777;
 /**
  * Durations
  */
@@ -26,5 +27,28 @@ $break-lg: 1200px;
 
 	&:hover {
 		background-color: mix($color, $black, 90%);
+	}
+}
+@mixin custom-btn($color) {
+	background-color: $color;
+	border-color: $color;
+
+	&:focus {
+		background-color: darken($color, 10%);
+		border-color: darken($color, 25%);
+	}
+	&:hover,
+	&:active {
+		background-color: darken($color, 10%);
+		border-color: darken($color, 12%);
+	}
+	&[disabled] {
+		background-color: $color;
+		border-color: $color;
+
+		&:hover {
+			background-color: $color;
+			border-color: $color;
+		}
 	}
 }

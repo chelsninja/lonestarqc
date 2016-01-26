@@ -14,9 +14,9 @@
   "dependencies": {
     "angular": "1.*",
     "angular-bootstrap": "0.*",
-    "bootstrap": "3.*",
-    "ui-router": "0.*",
-    "angular-ui-calendar": "1.*"
+    "angular-ui-router": "0.*",
+    "angular-ui-calendar": "1.*",
+    "bootstrap": "3.*"
   },
   "resolutions": {
     "angular": "1.*"

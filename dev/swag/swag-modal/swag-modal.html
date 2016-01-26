@@ -1,0 +1,54 @@
+<form class="add-form form-inline" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">Quick view</h4>
+        <a class="btn btn-link no-padding pull-right" type="button" ng-click="cancel()"><i class="fa fa-times fa-lg"></i></a>
+    </div>
+    <div class="modal-body row">
+        <div class="col-sm-6">
+            <uib-carousel>
+                <uib-slide ng-repeat="thumb in item.thumbs">
+                    <img ng-src="images/swag/{{thumb}}" class="img-thumbnail">
+                </uib-slide>
+            </uib-carousel>
+        </div>
+        <div class="col-sm-6">
+            <h3>{{item.name}}</h3>
+            <p>{{item.description}}</p>
+            <h5 class="price">{{item.price | currency}}</h5>
+
+            <hr>
+
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="{{item.payPalID}}">
+
+            <div class="form-group">
+                <input type="hidden" name="on0" value="Size">
+
+                <label for="addSize">Size:</label>
+                <select id="addSize" name="os0" ng-model="add.size" class="form-control" ng-init="add.size=item.sizes[0]">
+                    <option ng-value="size" ng-selected="add.size===size" ng-repeat="size in item.sizes">{{size}}</option>
+                </select>
+            </div>
+
+            <input type="hidden" name="currency_code" value="USD">
+
+            <div class="form-group">
+                <label for="addQty">Quantity:</label>
+                <span id="addQty" class="help-block">Set at checkout</span>
+            </div>
+            <p ng-if="item.banner==='Sold Out'" class="sold-out text-danger no-margin small">If you want to be
+                notified when this item is restocked, click <a ui-sref="contact({subject: 'restock {{item.name}}'})">
+                    here</a>.</p>
+
+            <hr>
+
+            <ul class="list-unstyled">
+                <li ng-repeat="note in item.notes" class="small text-muted">{{note}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+               border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+    </div>
+</form>

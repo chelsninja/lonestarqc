@@ -133,4 +133,52 @@
 		}
 	}
 
+	/**
+	 * Swag
+	 */
+	.swag {
+		.swag-filter {
+			margin-bottom: 20px;
+
+			p {
+				font-size: 12px;
+			}
+		}
+		.swag-results {
+			.thumbnail {
+				.banner {
+					font-size: 8px;
+					width: 100px;
+					right: -25px;
+					top: 8px;
+				}
+				h3 {
+					font-size: 16px;
+				}
+				p {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+	.swag-modal {
+		img {
+			width: 50%;
+		}
+		h3 {
+			font-size: 16px;
+		}
+		p {
+			font-size: 12px;
+		}
+		.price {
+			font-size: 14px;
+		}
+		select {
+			display: inline-block;
+			width: auto;
+			vertical-align: middle;
+		}
+	}
+
 }

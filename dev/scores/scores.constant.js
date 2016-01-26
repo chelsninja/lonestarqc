@@ -74,6 +74,48 @@ angular.module('app')
                     }
                 ],
                 placed: '3rd'
+            },
+            {
+                tourny: 'Diamond Cup IV',
+                date: 'November 14, 2015',
+                games: [
+                    {
+                        opp: 'Austin Quidditch',
+                        ourScore: '180',
+                        oppScore: '50*'
+                    },
+                    {
+                        opp: 'Gulfcoast Gumbeaux',
+                        ourScore: '180',
+                        oppScore: '70*'
+                    },
+                    {
+                        opp: 'Sam Houston State University',
+                        ourScore: '120',
+                        oppScore: '70*'
+                    },
+                    {
+                        opp: 'Texas State University',
+                        ourScore: '140',
+                        oppScore: '90*'
+                    },
+                    {
+                        opp: 'Ohio State University',
+                        ourScore: '180*',
+                        oppScore: '70'
+                    },
+                    {
+                        opp: 'Texas Cavalry',
+                        ourScore: '140*',
+                        oppScore: '60'
+                    },
+                    {
+                        opp: 'Texas State University',
+                        ourScore: '90*',
+                        oppScore: '110'
+                    }
+                ],
+                placed: '2nd'
             }
         ]
     });

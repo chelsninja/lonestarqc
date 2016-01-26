@@ -1,0 +1,54 @@
+@import "../app.tools";
+
+.swag {
+	.cover-photo-half {
+		background-image: url("images/lsqc-hats.jpeg");
+	}
+	.success-alert {
+		padding-left: 48px;
+
+		.fa {
+			position: absolute;
+			top: 11px;
+			left: 15px;
+		}
+	}
+	.swag-filter {
+		.list-group-item {
+			cursor: pointer;
+		}
+	}
+	.swag-results {
+		.thumbnail {
+			position: relative;
+			overflow: hidden;
+
+			.banner {
+				position: absolute;
+				background-color: $black;
+				transform: rotate(35deg);
+				color: white;
+				padding: 5px;
+				width: 200px;
+				right: -45px;
+				top: 25px;
+			}
+			.overlay-btn {
+				background-color: rgba($black, 0.5);
+				position: absolute;
+				width: calc(100% - 8px);
+				top: 4px;
+
+				.btn {
+					transform: translateX(-50%) translateY(-50%);
+					position: absolute;
+					left: 50%;
+				}
+			}
+			h3 {
+				font-size: 22px;
+				margin-top: 10px;
+			}
+		}
+	}
+}

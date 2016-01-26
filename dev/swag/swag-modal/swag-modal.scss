@@ -1,0 +1,55 @@
+@import "../../app.tools";
+
+.swag-modal {
+	.modal-header {
+		a {
+			color: $gray;
+
+			&:hover {
+				color: darken($gray, 15%);
+			}
+		}
+	}
+	.carousel {
+		.carousel-control {
+			background: none;
+
+			&.left .glyphicon:before {
+				content: "\f053";
+			}
+			&.right .glyphicon:before {
+				content: "\f054";
+			}
+			.glyphicon {
+				font-family: FontAwesome;
+			}
+		}
+		.carousel-indicators {
+			display: none;
+		}
+	}
+	.price {
+		font-size: 22px;
+		color: $red;
+	}
+	.add-form {
+		.form-group	{
+			margin-right: 20px;
+
+			label {
+				margin-right: 10px;
+			}
+			.help-block {
+				display: inline-block;
+			}
+		}
+		.sold-out {
+			margin-top: 10px;
+		}
+	}
+	.modal-footer {
+		input {
+			vertical-align: middle;
+		}
+	}
+}

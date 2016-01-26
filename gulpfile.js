@@ -39,7 +39,11 @@ var htmlFiles = [
 	sassFiles = [
 		dev + '/app.globals.scss',
 		dev + '/app.scss',
-		dev + '/**/*.scss'
+		dev + '/**/*.scss',
+		'!' + dev + '/app.media.*.scss'
+	],
+	sassMediaFiles = [
+		dev + '/app.media.*.scss'
 	],
 	jsFiles = [
 		dev + '/**/*.module.js',
@@ -56,8 +60,7 @@ var vendorCss = [
 		bower + '/jquery/dist/jquery.min.js',
 		bower + '/moment/min/moment.min.js',
 		bower + '/angular/angular.min.js',
-		bower + '/ui-router/release/angular-ui-router.min.js',
-		bower + '/bootstrap/dist/js/bootstrap.min.js',
+		bower + '/angular-ui-router/release/angular-ui-router.min.js',
 		bower + '/angular-bootstrap/ui-bootstrap.min.js',
 		bower + '/angular-bootstrap/ui-bootstrap-tpls.min.js',
 		bower + '/fullcalendar/dist/fullcalendar.min.js',
@@ -72,7 +75,7 @@ var vendorCss = [
 gulp.task('default', ['watch']);
 
 gulp.task('watch', ['dev'], function() {
-	gulp.watch(sassFiles, ['sass']);
+	gulp.watch([sassFiles, sassMediaFiles], ['sass']);
 	gulp.watch(jsFiles, ['js']);
 	gulp.watch(htmlFiles, ['html']);
 	gulp.watch(templateFiles, ['templates']);
@@ -88,15 +91,26 @@ gulp.task('prod', function() {
 });
 
 gulp.task('sass', function() {
-	gulp.src(sassFiles)
-		.pipe(sass())
-		.pipe(csslint({
-			'adjoining-classes': false
-		}))
-		.pipe(csslint.reporter())
-		.pipe(concat("app.css"))
-		.pipe(gulpIf(isProd, minifyCss()))
-		.pipe(gulp.dest(prod));
+	eventStream.merge(
+		gulp.src(sassFiles)
+			.pipe(sass())
+			.pipe(csslint({
+				'adjoining-classes': false
+			}))
+			.pipe(csslint.reporter())
+			.pipe(concat("app.css"))
+			.pipe(gulpIf(isProd, minifyCss()))
+			.pipe(gulp.dest(prod)),
+		gulp.src(sassMediaFiles)
+			.pipe(sass())
+			.pipe(csslint({
+				'adjoining-classes': false
+			}))
+			.pipe(csslint.reporter())
+			.pipe(concat("app.media.css"))
+			.pipe(gulpIf(isProd, minifyCss()))
+			.pipe(gulp.dest(prod))
+	);
 });
 
 gulp.task('js', function() {

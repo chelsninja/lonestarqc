@@ -3,6 +3,8 @@ angular.module('app')
         function($scope, $rootScope) {
             "use strict";
 
+            $scope.isCollapsed = true;
+
             $rootScope.$on('$stateChangeStart',
                 function(event, toState, toParams, fromState, fromParams) {
                     if (fromState.name === 'home' && toState.name !== 'home') {
