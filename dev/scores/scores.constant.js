@@ -27,7 +27,7 @@ angular.module('app')
                     },
                     {
                         opp: 'University of Texas',
-                        ourScore: '160*',
+                        ourScore: '260*',
                         oppScore: '60'
                     },
                     {
@@ -45,22 +45,22 @@ angular.module('app')
                     {
                         opp: 'University of Texas - San Antonio',
                         ourScore: '160',
-                        oppScore: '80*'
+                        oppScore: '110*'
                     },
                     {
                         opp: 'Austin Quidditch',
-                        ourScore: '220',
+                        ourScore: '210',
                         oppScore: '70*'
                     },
                     {
                         opp: 'Lumberjack Quidditch',
-                        ourScore: '150*',
-                        oppScore: '0'
+                        ourScore: '290',
+                        oppScore: '100*'
                     },
                     {
                         opp: 'Lumberjack Quidditch',
-                        ourScore: '150*',
-                        oppScore: '0'
+                        ourScore: '190',
+                        oppScore: '30*'
                     },
                     {
                         opp: 'University of Arkansas',
@@ -100,7 +100,7 @@ angular.module('app')
                         oppScore: '90*'
                     },
                     {
-                        opp: 'Ohio State University',
+                        opp: 'Oklahoma State University',
                         ourScore: '180*',
                         oppScore: '70'
                     },
