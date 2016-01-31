@@ -15,6 +15,6 @@
         <ul class="list-group">
             <li ng-repeat="game in score.games" class="list-group-item">vs. {{game.opp}} — {{game.ourScore}} - {{game.oppScore}}</li>
         </ul>
-        <div class="panel-footer">Finished: {{score.placed}} Place</div>
+        <div ng-if="score.placed" class="panel-footer">Finished: {{score.placed}} Place</div>
     </div>
 </article>

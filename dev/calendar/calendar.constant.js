@@ -96,7 +96,7 @@ angular.module('app')
                 title: 'Practice',
                 start: "19:00",
                 end: "21:00",
-                dowStart: new Date(2015, 12, 6),
+                dowStart: new Date(2015, 12, 6, 19),
                 dowEnd: new Date(2016, 3, 20),
                 dow: [3],
                 className: 'practice',
@@ -104,11 +104,11 @@ angular.module('app')
                 locationUrl: 'https://goo.gl/maps/Ets4j'
             },
             {
-                id: 'practice2',
+                id: 'practice2a',
                 title: 'Practice',
                 start: "12:00",
                 end: "15:00",
-                dowStart: new Date(2015, 12, 6),
+                dowStart: new Date(2015, 12, 6, 12),
                 dowEnd: new Date(2016, 1, 17),
                 dow: [0],
                 className: 'practice',
@@ -116,11 +116,11 @@ angular.module('app')
                 locationUrl: 'https://goo.gl/maps/2wxVe'
             },
             {
-                id: 'practice2.1',
+                id: 'practice2b',
                 title: 'Practice',
                 start: "12:00",
                 end: "15:00",
-                dowStart: new Date(2016, 1, 28),
+                dowStart: new Date(2016, 1, 28, 12),
                 dowEnd: new Date(2016, 3, 17),
                 dow: [0],
                 className: 'practice',

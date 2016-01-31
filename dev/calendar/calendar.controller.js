@@ -28,26 +28,25 @@ angular.module('app')
                     } else {
                         $scope.calPopoverHtml[event.id] = $sce.trustAsHtml(
                             '<ul class="list-unstyled no-margin">' +
-                            '<li><strong>Time:</strong> '+$filter('date')(event.start._d, 'shortTime', '+0000')+'</li>' +
+                            '<li><strong>Time:</strong> '+$filter('date')(event.dowStart, 'shortTime')+'</li>' +
                             '<li><strong>Location:</strong> <a href="'+event.locationUrl+'" target="_blank">'+event.location+'</a></li>' +
                             '</ul>'
                         );
                     }
-
                     // Add popover
                     element.attr({
-                        'popover-html': 'calPopoverHtml.'+event.id,
+                        'uib-popover-html': 'calPopoverHtml.'+event.id,
                         'popover-title': event.title,
                         'popover-class': 'cal-popover'
                     });
                     $compile(element)($scope);
 
                     // Hide recurring events before start date
-                    if (event._recurring && event.start < event.dowStart) {
+                    if (event._recurring && (event.start < event.dowStart)) {
                         return false;
                     }
                     // Hide recurring events after end date
-                    if (event._recurring && event.end > event.dowEnd) {
+                    if (event._recurring && (event.end > event.dowEnd)) {
                         return false;
                     }
                 },

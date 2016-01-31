@@ -116,6 +116,37 @@ angular.module('app')
                     }
                 ],
                 placed: '2nd'
+            },
+            {
+                tourny: 'Bat City Showcase',
+                date: 'January 30, 2016',
+                games: [
+                    {
+                        opp: 'Lost Boys',
+                        ourScore: '150*',
+                        oppScore: '30'
+                    },
+                    {
+                        opp: 'LA Gambits',
+                        ourScore: '190',
+                        oppScore: '160*'
+                    },
+                    {
+                        opp: 'Tribe Quidditch',
+                        ourScore: '240*',
+                        oppScore: '30'
+                    },
+                    {
+                        opp: 'Crimson Elite',
+                        ourScore: '170*',
+                        oppScore: '30'
+                    },
+                    {
+                        opp: 'QC Boston',
+                        ourScore: '100',
+                        oppScore: '110*'
+                    }
+                ]
             }
         ]
     });
