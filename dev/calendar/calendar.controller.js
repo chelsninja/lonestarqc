@@ -25,7 +25,7 @@ angular.module('app')
                             '<li><strong>Location:</strong> <a href="'+event.locationUrl+'" target="_blank">'+event.location+'</a></li>' +
                             '</ul>' +
                             '<hr>' +
-                            '<a ui-sref="scores">View results</a>'
+                            '<a ui-sref="scores" class="text-small-caps">View results</a>'
                         );
                     } else {
                         var dateTime = event.dowStart || event.start._d;

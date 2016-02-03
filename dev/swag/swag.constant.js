@@ -14,7 +14,6 @@ angular.module('app')
                 type: 'Clothing',
                 price: 20,
                 payPalID: 'VPTGV6QBZLWFU',
-                payPalForm: 'swag/paypal-forms/never-quit-tee-red.html',
                 sizes: ['XS', 'S', 'M', 'L'],
                 notes: [
                     'The model is wearing a size extra small.',
@@ -32,7 +31,6 @@ angular.module('app')
                 type: 'Clothing',
                 price: 20,
                 payPalID: 'QF6ZJ98QHBUW6',
-                payPalForm: 'swag/paypal-forms/never-quit-tee-blue.html',
                 sizes: ['XS', 'S', 'M', 'L'],
                 notes: [
                     'The model is a computerized proof.',
@@ -49,7 +47,6 @@ angular.module('app')
                 type: 'Home',
                 price: 5,
                 payPalID: 'LXQP8U6QAA5T6',
-                payPalForm: 'swag/paypal-forms/crest-shot-glass.html',
                 sizes: ['One Size'],
                 notes: [
                     'Made by Libbey Glassware.',
@@ -69,7 +66,6 @@ angular.module('app')
                 type: 'Accessories',
                 price: 25,
                 payPalID: 'SG8ULDQH26VBQ',
-                payPalForm: 'swag/paypal-forms/crest-snapback.html',
                 sizes: ['One Size'],
                 notes: [
                     'Acrylic and wool blend.',
@@ -88,7 +84,6 @@ angular.module('app')
                 type: 'Clothing',
                 price: 15,
                 payPalID: 'LV3CR9MSDGX2J',
-                payPalForm: 'swag/paypal-forms/crest-tee.html',
                 sizes: ['S', 'M', 'L', 'XL'],
                 notes: [
                     'The model is wearing a size small.',
@@ -101,12 +96,11 @@ angular.module('app')
                 id: 7,
                 name: '#LSQChristmas Shot Glass',
                 description: 'Laser etched, Libbey 5120 whiskey glass',
-                banner: 'Special Edition',
+                banner: 'Sold Out',
                 thumbs: ['lsqchristmas-shot-glass.png'],
                 type: 'Home',
                 price: 5,
                 payPalID: '5JWZB7VBJV3GC',
-                payPalForm: 'swag/paypal-forms/lsqchristmas-shot-glass.html',
                 sizes: ['One Size'],
                 notes: [
                     'Made by Libbey Glassware.',
@@ -115,5 +109,36 @@ angular.module('app')
                     'High quality laser etched.'
                 ]
             }
+            //{
+            //    id: 8,
+            //    name: 'Bat City Shot Glass',
+            //    description: 'Laser etched, Libbey 5120 whiskey glass',
+            //    banner: 'Special Edition',
+            //    thumbs: ['batcity-shot-glass.png'],
+            //    type: 'Home',
+            //    price: 5,
+            //    payPalID: '',
+            //    sizes: ['One Size'],
+            //    notes: [
+            //        'Made by Libbey Glassware.',
+            //        '1.5 oz (44 ml).',
+            //        'Whiskey glass.',
+            //        'High quality laser etched.'
+            //    ]
+            //},
+            //{
+            //    id: 9,
+            //    name: 'Bat City Tee',
+            //    description: '',
+            //    thumbs: [
+            //        'batcity-tee-sm-front',
+            //        'batcity-tee-sm-back'
+            //    ],
+            //    type: 'Clothing',
+            //    price: 15,
+            //    payPalID: 'LV3CR9MSDGX2J',
+            //    sizes: ['S', 'M', 'L', 'XL'],
+            //    notes: []
+            //}
         ]
     });

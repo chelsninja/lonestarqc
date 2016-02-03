@@ -100,7 +100,7 @@ angular.module('app')
                         homeTeam: 'Gambits',
                         homeScore: '190',
                         awayTeam: 'LSQC',
-                        awayScore: '140*',
+                        awayScore: '160*',
                         overtime: true
                     },
                     {
