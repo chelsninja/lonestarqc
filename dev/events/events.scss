@@ -1,0 +1,29 @@
+@import "../app.tools";
+
+.events {
+	.cover-photo-half {
+		background-image: url("images/lsqc-bat-city.jpg");
+	}
+	.page-article {
+		.media {
+			&:last-child hr {
+				display: none;
+			}
+			.media-object {
+				width: 100px;
+				height: auto;
+			}
+			h3 a {
+				text-decoration: underline;
+				color: $black;
+
+				&:hover {
+					color: $blue;
+				}
+			}
+			p:last-child {
+				margin: 0;
+			}
+		}
+	}
+}

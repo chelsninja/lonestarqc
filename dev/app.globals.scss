@@ -6,12 +6,16 @@ body {
 	position: relative;
 }
 body a {
+	cursor: pointer;
 	color: $blue;
 }
 .truncate {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+.text-bold {
+	font-weight: bold;
 }
 .no-margin {
 	margin: 0;
@@ -97,4 +101,7 @@ body a {
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
 	color: $blue;
+}
+.breadcrumb > li + li::before {
+	content: "/";
 }

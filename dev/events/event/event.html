@@ -1,0 +1,43 @@
+<ol class="breadcrumb">
+    <li><a ui-sref="events">Events</a></li>
+    <li class="active">{{selectedEvent.name}}</li>
+</ol>
+<div class="event-summary row">
+    <aside class="col-md-4">
+        <img ng-src="images/{{selectedEvent.logo}}" alt="{{selectedEvent.name}}" class="img-thumbnail">
+        <dl>
+            <dt>Date</dt>
+            <dd>{{selectedEvent.date}}</dd>
+            <dt>Location</dt>
+            <dd>{{selectedEvent.location}}</dd>
+            <dt>Teams</dt>
+            <dd>
+                <ol>
+                    <li ng-repeat="team in selectedEvent.teams">{{team}}</li>
+                </ol>
+            </dd>
+        </dl>
+    </aside>
+    <div class="col-md-8">
+        <div class="page-header">
+            <h3>{{selectedEvent.name}} <a ng-href="{{selectedEvent.fbUrl}}" target="_blank" class="fa fa-facebook-square"></a></h3>
+            <p ng-repeat="description in selectedEvent.descriptions">{{description}}</p>
+        </div>
+        <div ng-if="selectedEvent.games" class="table-responsive">
+            <table class="table table-condensed table-hover">
+                <tbody>
+                <tr ng-repeat="game in selectedEvent.games">
+                    <td class="text-right" ng-class="{'text-bold': game.winner===game.homeTeam}">{{game.homeTeam}}</td>
+                    <td ng-class="{'text-bold': game.winner===game.homeTeam}">{{game.overtime ? 'OT ' : ''}}{{game.homeScore}}</td>
+                    <td class="text-center">vs.</td>
+                    <td class="text-right" ng-class="{'text-bold': game.winner===game.awayTeam}">{{game.awayScore}}</td>
+                    <td ng-class="{'text-bold': game.winner===game.awayTeam}">{{game.awayTeam}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div ng-if="!selectedEvent.games" class="alert alert-danger">
+            <strong>Not available!</strong>
+        </div>
+    </div>
+</div>

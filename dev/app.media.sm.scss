@@ -181,4 +181,37 @@
 		}
 	}
 
+	/**
+ 	 * Events
+	 */
+	.events {
+		.page-article .media {
+			.media-object {
+				width: 60px;
+			}
+			h3 {
+				a {
+					font-size: 18px;
+				}
+				.text-muted {
+					font-size: 14px;
+				}
+			}
+			p {
+				font-size: 12px;
+			}
+		}
+	}
+
+	/**
+ 	 * Event
+	 */
+	.event {
+		.page-header {
+			h3 {
+				font-size: 20px;
+			}
+		}
+	}
+
 }

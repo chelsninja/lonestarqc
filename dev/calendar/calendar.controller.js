@@ -23,12 +23,15 @@ angular.module('app')
                             '<ul class="list-unstyled no-margin">' +
                             '<li><strong>Time:</strong> All Day</li>' +
                             '<li><strong>Location:</strong> <a href="'+event.locationUrl+'" target="_blank">'+event.location+'</a></li>' +
-                            '</ul>'
+                            '</ul>' +
+                            '<hr>' +
+                            '<a ui-sref="scores">View results</a>'
                         );
                     } else {
+                        var dateTime = event.dowStart || event.start._d;
                         $scope.calPopoverHtml[event.id] = $sce.trustAsHtml(
                             '<ul class="list-unstyled no-margin">' +
-                            '<li><strong>Time:</strong> '+$filter('date')(event.dowStart, 'shortTime')+'</li>' +
+                            '<li><strong>Time:</strong> '+$filter('date')(dateTime, 'shortTime')+'</li>' +
                             '<li><strong>Location:</strong> <a href="'+event.locationUrl+'" target="_blank">'+event.location+'</a></li>' +
                             '</ul>'
                         );

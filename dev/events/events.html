@@ -1,0 +1,30 @@
+<div class="cover-photo-half">
+    <p class="photo-cred">Photo credit to Paxton Casey</p>
+</div>
+<header class="jumbotron">
+    <div class="container">
+        <h2>Events</h2>
+        <p>Check here for all Lone Star QC sponsored events. We currently host the Bat City Showcase as an annual
+            community team invitational tournament to highlight the best community quidditch teams in the US. We also
+            host a winter fantasy tournament for some more relaxed and fun quidditch great for all experience levels.
+            Keep up with this page for any future events and feel free to <a
+                    ui-sref="contact({subject: 'events'})">email us</a> with any event suggestions you may have.</p>
+    </div>
+</header>
+<article class="page-article container" ui-view>
+    <div ng-repeat="event in events | orderBy: '-date' track by event.id" class="media no-margin">
+        <div class="media-left">
+            <a ui-sref="event({eventId: event.id})">
+                <img class="media-object" ng-src="images/{{event.logo}}" alt="{{event.name}}">
+            </a>
+        </div>
+        <div class="media-body">
+            <h3 class="media-heading">
+                <a ui-sref="event({eventId: event.id})">{{event.name}}</a>
+                <small class="text-muted">— {{event.date}}</small>
+            </h3>
+            <p ng-repeat="description in event.descriptions">{{description}}</p>
+        </div>
+        <hr>
+    </div>
+</article>

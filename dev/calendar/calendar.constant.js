@@ -4,7 +4,7 @@ angular.module('app')
             {
                 id: 'tryouts1',
                 title: '2015-2016 Fall Tryouts',
-                start: '2015-08-15 11',
+                start: new Date(2015, 7, 15, 11),
                 className: 'tryouts',
                 location: 'Domain Central Park',
                 locationUrl: 'https://www.facebook.com/events/1630272940545110/'
@@ -12,7 +12,7 @@ angular.module('app')
             {
                 id: 'group1',
                 title: 'Group Practice',
-                start: '2015-09-13 11',
+                start: new Date(2015, 5, 13, 11),
                 className: 'practice',
                 location: 'Zilker Park',
                 locationUrl: 'https://goo.gl/maps/2wxVe'
@@ -29,7 +29,7 @@ angular.module('app')
             {
                 id: 'group2',
                 title: 'Group Practice',
-                start: '2015-10-04 11',
+                start: new Date(2015, 9, 4, 11),
                 className: 'practice',
                 location: 'Ramsey Park',
                 locationUrl: 'https://goo.gl/maps/A2i9MKpfgpN2'
@@ -61,6 +61,14 @@ angular.module('app')
                 allDay: true,
                 location: 'Austin, TX 78729',
                 locationUrl: 'https://www.facebook.com/events/1689540537933780/'
+            },
+            {
+                id: 'tryouts2',
+                title: '2015-2016 Spring Tryouts',
+                start: new Date(2015, 12, 17, 11),
+                className: 'tryouts',
+                location: 'Zilker Park',
+                locationUrl: 'https://www.facebook.com/events/1703324559902260/'
             },
             {
                 id: 'tourny5',
@@ -96,7 +104,7 @@ angular.module('app')
                 title: 'Practice',
                 start: "19:00",
                 end: "21:00",
-                dowStart: new Date(2015, 12, 6, 19),
+                dowStart: new Date(2015, 12, 2, 19),
                 dowEnd: new Date(2016, 3, 20),
                 dow: [3],
                 className: 'practice',
@@ -106,11 +114,7 @@ angular.module('app')
             {
                 id: 'practice2a',
                 title: 'Practice',
-                start: "12:00",
-                end: "15:00",
-                dowStart: new Date(2015, 12, 6, 12),
-                dowEnd: new Date(2016, 1, 17),
-                dow: [0],
+                start: new Date(2015, 12, 10, 12),
                 className: 'practice',
                 location: 'Zilker Park',
                 locationUrl: 'https://goo.gl/maps/2wxVe'
@@ -118,14 +122,46 @@ angular.module('app')
             {
                 id: 'practice2b',
                 title: 'Practice',
+                start: new Date(2015, 12, 24, 12),
+                className: 'practice',
+                location: 'Zilker Park',
+                locationUrl: 'https://goo.gl/maps/2wxVe'
+            },
+            {
+                id: 'practice2c',
+                title: 'Practice',
                 start: "12:00",
                 end: "15:00",
-                dowStart: new Date(2016, 1, 28, 12),
+                dowStart: new Date(2016, 1, 3, 12),
+                dowEnd: new Date(2016, 1, 17),
+                dow: [0],
+                className: 'practice',
+                location: 'Zilker Park',
+                locationUrl: 'https://goo.gl/maps/2wxVe'
+            },
+            {
+                id: 'practice2d',
+                title: 'Practice',
+                start: "12:00",
+                end: "15:00",
+                dowStart: new Date(2016, 1, 21, 12),
                 dowEnd: new Date(2016, 3, 17),
                 dow: [0],
                 className: 'practice',
                 location: 'Zilker Park',
                 locationUrl: 'https://goo.gl/maps/2wxVe'
+            },
+            {
+                id: 'practice3',
+                title: 'Get Buckets',
+                start: "17:30",
+                end: "18:30",
+                dowStart: new Date(2015, 12, 31, 17, 30),
+                dowEnd: new Date(2016, 3, 18, 30),
+                dow: [4],
+                className: 'practice',
+                location: 'Ramsey Park',
+                locationUrl: 'https://goo.gl/maps/A2i9MKpfgpN2'
             }
         ]
     });
