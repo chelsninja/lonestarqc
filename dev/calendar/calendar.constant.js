@@ -133,8 +133,24 @@ angular.module('app')
                 start: "12:00",
                 end: "15:00",
                 dowStart: new Date(2016, 1, 3, 12),
-                dowEnd: new Date(2016, 1, 17),
+                dowEnd: new Date(2016, 1, 13),
                 dow: [0],
+                className: 'practice',
+                location: 'Zilker Park',
+                locationUrl: 'https://goo.gl/maps/2wxVe'
+            },
+            {
+                id: 'group2a',
+                title: 'Group Practice',
+                start: new Date(2016, 1, 13, 14),
+                className: 'practice',
+                location: 'Zilker Park',
+                locationUrl: 'https://goo.gl/maps/2wxVe'
+            },
+            {
+                id: 'group2b',
+                title: 'Group Practice (optional)',
+                start: new Date(2016, 1, 14, 11),
                 className: 'practice',
                 location: 'Zilker Park',
                 locationUrl: 'https://goo.gl/maps/2wxVe'
@@ -145,8 +161,72 @@ angular.module('app')
                 start: "12:00",
                 end: "15:00",
                 dowStart: new Date(2016, 1, 21, 12),
-                dowEnd: new Date(2016, 3, 17),
+                dowEnd: new Date(2016, 2, 12),
                 dow: [0],
+                className: 'practice',
+                location: 'Zilker Park',
+                locationUrl: 'https://goo.gl/maps/2wxVe'
+            },
+            {
+                id: 'group3a',
+                title: 'Group Practice',
+                start: new Date(2016, 2, 12, 14),
+                className: 'practice',
+                location: 'Zilker Park',
+                locationUrl: 'https://goo.gl/maps/2wxVe'
+            },
+            {
+                id: 'group3b',
+                title: 'Group Practice',
+                start: new Date(2016, 2, 13, 11),
+                className: 'practice',
+                location: 'Zilker Park',
+                locationUrl: 'https://goo.gl/maps/2wxVe'
+            },
+            {
+                id: 'practice2e',
+                title: 'Practice',
+                start: "12:00",
+                end: "15:00",
+                dowStart: new Date(2016, 2, 13, 12),
+                dowEnd: new Date(2016, 2, 26),
+                dow: [0],
+                className: 'practice',
+                location: 'Zilker Park',
+                locationUrl: 'https://goo.gl/maps/2wxVe'
+            },
+            {
+                id: 'group4a',
+                title: 'Group Practice',
+                start: new Date(2016, 2, 26, 14),
+                className: 'practice',
+                location: 'Zilker Park',
+                locationUrl: 'https://goo.gl/maps/2wxVe'
+            },
+            {
+                id: 'group4b',
+                title: 'Group Practice',
+                start: new Date(2016, 2, 27, 11),
+                className: 'practice',
+                location: 'Zilker Park',
+                locationUrl: 'https://goo.gl/maps/2wxVe'
+            },
+            {
+                id: 'practice2e',
+                title: 'Practice',
+                start: "12:00",
+                end: "15:00",
+                dowStart: new Date(2016, 2, 27, 12),
+                dowEnd: new Date(2016, 3, 10),
+                dow: [0],
+                className: 'practice',
+                location: 'Zilker Park',
+                locationUrl: 'https://goo.gl/maps/2wxVe'
+            },
+            {
+                id: 'group5',
+                title: 'Group Practice',
+                start: new Date(2016, 3, 10, 11),
                 className: 'practice',
                 location: 'Zilker Park',
                 locationUrl: 'https://goo.gl/maps/2wxVe'
