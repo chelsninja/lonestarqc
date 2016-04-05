@@ -59,6 +59,7 @@ angular.module('app')
                 id: 4,
                 name: 'Crest Snapback',
                 description: 'Two-tone, heather grey and royal blue, adjustable snapback',
+                banner: 'Sold Out',
                 thumbs: [
                     'crest-snapback-1',
                     'crest-snapback-2'
